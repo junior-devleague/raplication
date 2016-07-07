@@ -1,4 +1,4 @@
-/*#323237 #FFF4D7  #D6DBE1*/
+/*text:#323237 Backround:#FFF4D7  Tabs:#D6DBE1*/
 
 
 
@@ -20,3 +20,10 @@
 
 
 /* Composition Tools */
+.comp{
+	font-size: 30px;
+	font-family: impact;
+	color: #323237;
+	background-color: #FFF4D7;
+
+}
