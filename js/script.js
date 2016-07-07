@@ -20,7 +20,7 @@ function initiate(){
 
 	function handleHover(evt){
 		var parent = evt.target.parentElement;
-		parent.className = 'hoverStyles';
+		parent.className = 'hoverStyle';
 	}
 
 	function releaseHover(evt){

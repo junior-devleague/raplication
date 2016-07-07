@@ -1,4 +1,4 @@
-/*text:#323237 Backround:#FFF4D7  Tabs:#D6DBE1*/
+/*text:#323237 Backround:#FFF4D7  Tabs:#392A1E*/
 
 /* Home */
 .title{
@@ -12,8 +12,32 @@
 }
 
 .button-1{
-	background-color: #D6DBE1;
+	background-color: #392A1E;
+	height: 75px;
+	text-align: center;
+	padding-top: 20px;
+}
 
+.linkStyles{
+	font-family: impact;
+	color: #FFF4D7;
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+}
+
+.linkStyles:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.hoverStyle{
+	background-color: #4C4C4C;
+	color: white;
+	text-align: center;
+	height: 75px;
+	font-size: 25px;
+	padding-top: 20px;
 }
 
 /* About */
