@@ -54,7 +54,7 @@ body, html{
 /* About */
 .about{
 	font-size: 18px;
-	font-family: Lucida Console;
+	font-family: Lucida;
 	color: #323237;
 	margin-top: 15px;
 }
@@ -62,7 +62,7 @@ body, html{
 .bold{
 	margin-top: 30px;
 	font-size: 18px;
-	font-family: Lucida Console;
+	font-family: Lucida;
 	color: #323237;
 	font-weight: bold;
 }
@@ -73,7 +73,7 @@ body, html{
 /* Composition Tools */
 .comp{
 	font-size: 18px;
-	font-family: Lucida Console;
+	font-family: Lucida;
 	color: #323237;
 	margin-top: 15px;
 }
@@ -81,7 +81,7 @@ body, html{
 .bold{
 	margin-top: 30px;
 	font-size: 18px;
-	font-family: Lucida Console;
+	font-family: Lucida;
 	color: #323237;
 	font-weight: bold;
 }
