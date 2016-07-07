@@ -17,6 +17,9 @@ function initiate(){
 	hoverThree.addEventListener('mouseover', handleHover);
 	hoverThree.addEventListener('mouseleave', releaseHover);
 
+	var hoverFour = document.getElementById('home');
+	hoverFour.addEventListener('mouseover', handleHover);
+	hoverFour.addEventListener('mouseleave', releaseHover);
 
 	function handleHover(evt){
 		var parent = evt.target.parentElement;
