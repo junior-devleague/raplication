@@ -28,7 +28,7 @@ function initiate(){
 
 	function releaseHover(evt){
 		var parent = evt.target.parentElement;
-		parent.className = 'button-1'; 
+		parent.className = 'button-1';
 	}
 
 //About
@@ -38,4 +38,40 @@ function initiate(){
 //Composition
 
 
+}
+
+
+function recordVideo() {
+	var player = videojs("myVideo",
+	{
+	    controls: true,
+	    width: 450,
+	    height: 300,
+	    plugins: {
+	        record: {
+	            audio: true,
+	            video: true,
+	            maxLength: 216000,
+	            debug: true
+	        }
+	    }
+	});
+	player.on('deviceReady', function(){
+		console.log("Ready to go!")
+	});
+	player.on('deviceError', function() {
+	    console.log('device error:', player.deviceErrorCode);
+	});
+
+	player.on('error', function(error) {
+	    console.log('error:', error);
+	});
+
+	player.on('startRecord', function() {
+	    console.log('started recording!');
+	});
+
+	player.on('finishRecord', function() {
+	    console.log('finished recording: ', player.recordedData);
+	});
 }
