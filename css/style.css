@@ -13,6 +13,8 @@
 	height: 100px;
 }
 
+.button-1
+
 /* About */
 
 
@@ -21,9 +23,9 @@
 
 /* Composition Tools */
 .comp{
-	font-size: 30px;
+	font-size: 18px;
 	font-family: impact;
 	color: #323237;
-	background-color: #FFF4D7;
+	font-weight: normal;
 
 }

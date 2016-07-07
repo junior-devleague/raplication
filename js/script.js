@@ -1,9 +1,32 @@
 window.onload = initiate;
 
 //put all js in this function!!!g
-<<<<<<< HEAD
+
 function initiate(){
 //Home
+	//hoverVanTransform
+	var hoverVan = document.getElementById('about');
+	hoverVan.addEventListener('mouseover', handleHover);
+	hoverVan.addEventListener('mouseleave', releaseHover);
+
+	var hoverTwo = document.getElementById('speech');
+	hoverTwo.addEventListener('mouseover', handleHover);
+	hoverTwo.addEventListener('mouseleave', releaseHover);
+
+	var hoverThree = document.getElementById('comp');
+	hoverThree.addEventListener('mouseover', handleHover);
+	hoverThree.addEventListener('mouseleave', releaseHover);
+
+
+	function handleHover(evt){
+		var parent = evt.target.parentElement;
+		parent.className = 'hoverStyles';
+	}
+
+	function releaseHover(evt){
+		var parent = evt.target.parentElement;
+		parent.className = 'button-1'; 
+	}
 
 //About
 
@@ -11,8 +34,5 @@ function initiate(){
 
 //Composition
 
-=======
-function initiate() {
->>>>>>> e74ed163b931e2e5abc03f8fc8cf6df0eb8d1faf
 
 }
