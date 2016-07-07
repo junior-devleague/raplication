@@ -1,7 +1,5 @@
 /*text:#323237 Backround:#FFF4D7  Tabs:#D6DBE1*/
 
-
-
 /* Home */
 .title{
 	font-size: 45px;
@@ -13,7 +11,10 @@
 	height: 100px;
 }
 
-.button-1
+.button-1{
+	background-color: #D6DBE1;
+
+}
 
 /* About */
 
@@ -26,6 +27,4 @@
 	font-size: 18px;
 	font-family: impact;
 	color: #323237;
-	font-weight: normal;
-
 }
