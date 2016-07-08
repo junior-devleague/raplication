@@ -75,3 +75,9 @@ function recordVideo() {
 	    console.log('finished recording: ', player.recordedData);
 	});
 }
+
+function audioCheck() {
+	var recognizer = new Worker("js/recognizer.js");
+	var id = 0;
+	recognizer.postMessage({command: 'initialize', callbackId: id});
+}
