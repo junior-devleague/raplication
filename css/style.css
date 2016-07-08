@@ -56,6 +56,29 @@ body, html{
 
 .marginImage{
 	margin-top: 15px;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+}
+
+.VRC{
+	text-align: center;
+	font-family: 'Sonsie One', cursive;
+	font-size: 20px;
+	background-color: #FFF4D7;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 15px;
+}
+
+.CEO{
+	font-family: impact;
+	font-size: 20px;
+	background-color: #FFF4D7;
+	border-style: ridge;
+	border-color: #BC5202;
+	border-width: 4px;
 }
 
 /* About */
@@ -74,14 +97,6 @@ body, html{
 	font-weight: bold;
 }
 
-.CEO{
-	font-family: impact;
-	font-size: 20px;
-	background-color: #FFF4D7;
-	border-style: ridge;
-	border-color: #BC5202;
-	border-width: 4px;
-}
 /* Speech Tools */
 
 
