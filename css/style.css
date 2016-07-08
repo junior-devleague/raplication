@@ -54,6 +54,10 @@ body, html{
 	border-width: 5px;
 }
 
+.marginImage{
+	margin-top: 15px;
+}
+
 /* About */
 .about{
 	font-size: 18px;
@@ -70,6 +74,14 @@ body, html{
 	font-weight: bold;
 }
 
+.CEO{
+	font-family: impact;
+	font-size: 20px;
+	background-color: #FFF4D7;
+	border-style: ridge;
+	border-color: #BC5202;
+	border-width: 4px;
+}
 /* Speech Tools */
 
 
