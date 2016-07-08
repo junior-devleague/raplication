@@ -54,6 +54,10 @@ body, html{
 	border-width: 5px;
 }
 
+.marginImage{
+	margin-top: 15px;
+}
+
 /* About */
 .about{
 	font-size: 18px;
