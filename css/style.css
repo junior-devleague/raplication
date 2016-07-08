@@ -57,7 +57,6 @@ body, html{
 	font-family: Lucida;
 	color: #323237;
 	margin-top: 15px;
-	background-color: #FFF4D7;
 }
 
 .bold{
@@ -66,7 +65,6 @@ body, html{
 	font-family: Lucida;
 	color: #323237;
 	font-weight: bold;
-	background-color: #FFF4D7;
 }
 
 /* Speech Tools */
@@ -78,7 +76,6 @@ body, html{
 	font-family: Lucida;
 	color: #323237;
 	margin-top: 15px;
-	background-color: #FFF4D7;
 }
 
 .bold{
@@ -87,7 +84,6 @@ body, html{
 	font-family: Lucida;
 	color: #323237;
 	font-weight: bold;
-	background-color: #FFF4D7;
 }
 
 .italic{
@@ -95,6 +91,5 @@ body, html{
 	font-family: Lucida;
 	color: #323237;
 	font-style: italic;
-	background-color: #FFF4D7;
 	margin-left: 15px;
 }
