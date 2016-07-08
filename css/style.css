@@ -81,6 +81,28 @@ body, html{
 	border-width: 4px;
 }
 
+.reviews{
+	font-family: fantasy;
+	font-size: 18px;
+}
+
+.reviewsT{
+	font-family: fantasy;
+	font-size: 18px;
+}
+
+.reviewsH{
+	font-family: fantasy;
+	font-size: 18px;
+}
+
+#reviews{
+	background-color: #FFF4D7;
+	border-style: ridge;
+	border-color: #BC5202;
+	border-width: 4px;
+	margin-bottom: 5px;
+}
 /* About */
 .about{
 	font-size: 18px;
