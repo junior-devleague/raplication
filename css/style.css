@@ -49,6 +49,9 @@ body, html{
 	font-size: 25px;
 	padding-top: 20px;
 	margin-top: 15px;
+	border-style: inset;
+	border-color: darkgray;
+	border-width: 5px;
 }
 
 /* About */
