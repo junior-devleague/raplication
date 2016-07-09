@@ -65,11 +65,13 @@ body, html{
 	text-align: center;
 	font-family: 'Sonsie One', cursive;
 	font-size: 20px;
-	background-color: #FFF4D7;
+	background-color: #392A1E;
 	border: ridge;
 	border-width: 5px;
 	border-color: #BC5202;
 	margin-top: 15px;
+	color: #FFF4D7;
+	margin-bottom: 5px;
 }
 
 .CEO{
@@ -79,6 +81,7 @@ body, html{
 	border-style: ridge;
 	border-color: #BC5202;
 	border-width: 4px;
+	text-align: center;
 }
 
 .reviews{
@@ -103,6 +106,57 @@ body, html{
 	border-width: 4px;
 	margin-bottom: 5px;
 }
+
+.mouse{
+	background-color: white;
+	border: ridge;
+	border-color: #323237;
+	border-width: 3px;
+	text-align: center;
+	height: 85px;
+	margin-top: 30px;
+	padding-top: 30px;
+}
+
+.foot{
+	background-color: #392A1E;
+	border-style: inset;
+	border-color: #BC5202;
+	border-width: 4px;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 30px;
+	color: white;
+}
+
+.linkStyle2{
+	color: #FFF4D7;
+	text-decoration: none;
+}
+
+.linkStyle2:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.hoverStyle2{
+	background-color: #4C4C4C;
+	border-style: inset;
+	border-color: darkgray;
+	border-width: 4px;
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+	margin-top: 30px;
+	color: white;
+}
+
+.hoverStyle2:hover{
+	text-decoration: none;
+	color: white;
+}
+
 /* About */
 .about{
 	font-size: 18px;

@@ -21,6 +21,18 @@ function initiate(){
 	hoverFour.addEventListener('mouseover', handleHover);
 	hoverFour.addEventListener('mouseleave', releaseHover);
 
+	var hoverFive = document.getElementById('BTT');
+	hoverFive.addEventListener('mouseover', handleHover2);
+	hoverFive.addEventListener('mouseleave', releaseHover2);
+
+	var hoverSix = document.getElementById('sponsor');
+	hoverSix.addEventListener('mouseover', handleHover2);
+	hoverSix.addEventListener('mouseleave', releaseHover2);
+
+	var hoverSeven = document.getElementById('otherLink');
+	hoverSeven.addEventListener('mouseover', handleHover2);
+	hoverSeven.addEventListener('mouseleave', releaseHover2);
+
 	function handleHover(evt){
 		var parent = evt.target.parentElement;
 		parent.className = 'hoverStyle';
@@ -30,6 +42,17 @@ function initiate(){
 		var parent = evt.target.parentElement;
 		parent.className = 'button-1';
 	}
+
+	function handleHover2(evt){
+		var parent = evt.target.parentElement;
+		parent.className = 'hoverStyle2';
+	}
+
+	function releaseHover2(evt){
+		var parent = evt.target.parentElement;
+		parent.className = 'foot';
+	}
+
 
 //About
 
