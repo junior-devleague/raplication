@@ -2,7 +2,7 @@ window.onload = initiate;
 
 //put all js in this function!!!
 
-function initiate(){
+function initiate() {
 //Home
 	//hoverVanTransform
 	var hoverVan = document.getElementById('about');
@@ -80,9 +80,11 @@ function recordVideo() {
 	    }
 	});
 
+	audioCheck();
+
 	player.on('deviceReady', function(){
 		console.log("Ready to go!")
-	}); 
+	});
 	player.on('deviceError', function() {
 	    console.log('Device error:', player.deviceErrorCode);
 	});
@@ -101,9 +103,14 @@ function recordVideo() {
 	    console.log(audio);
 	});
 
+
 }
 
 function audioCheck() {
+
+	var startButton = document.getElementsByClassName('vjs-device-button vjs-control vjs-icon-device-perm');
+	//startButton[0] is the button
+	startButton[0].click();
 
 	function checkVoice() {
 		// Let's define a command.
@@ -120,15 +127,35 @@ function audioCheck() {
 		annyang.start();
 	}
 
+	checkVoice();
 
 	function start(){
-
+		var words = {
+			'A parameter forgives a wide correspondence. How can a blanket tube the stray crush? After the dishonest hate changes the upper iron. An early crystal frowns underneath each conceivable hero. The purchase loses over a grammatical conflict.': correct
+		}
+		annyang.addWords(words);
+		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
+		console.log(button[0]);
+		button[0].click();
+		console.log("Starting the recording")
 	}
 
 	function end() {
-		
+		var button = document.getElementByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
+		console.log(button[0]);
+		button[0].click();
+		console.log("STOP!")
+		annyang.abort();
 	}
-	checkVoice();
+
+	function correct() {
+		console.log(correct);
+		end();
+	}
+
+
+
+
 	// var recognizer = new Worker("js/recognizer.js");
 	// var id = 0;
 	// recognizer.postMessage({command: 'initialize', callbackId: id});
