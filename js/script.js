@@ -119,7 +119,7 @@ function audioCheck() {
 	});
 
 	stopButton.addEventListener('click', function() {
-		stop();
+		end();
 	});
 
 	function checkVoice() {
@@ -141,7 +141,7 @@ function audioCheck() {
 		var words = {
 			'A parameter forgives a wide correspondence. How can a blanket tube the stray crush? After the dishonest hate changes the upper iron. An early crystal frowns underneath each conceivable hero. The purchase loses over a grammatical conflict.': correct
 		}
-		annyang.addWords(words);
+		annyang.addCommands(words);
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
 		console.log(button[0]);
 		button[0].click();
@@ -149,7 +149,7 @@ function audioCheck() {
 	}
 
 	function end() {
-		var button = document.getElementByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
+		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
 		console.log(button[0]);
 		button[0].click();
 		console.log("STOP!")
