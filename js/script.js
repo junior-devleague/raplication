@@ -112,6 +112,16 @@ function audioCheck() {
 	//startButton[0] is the button
 	startButton[0].click();
 
+	var sButton = document.getElementById('start');
+	var stopButton = document.getElementById('stop');
+	sButton.addEventListener('click', function() {
+		start();
+	});
+
+	stopButton.addEventListener('click', function() {
+		stop();
+	});
+
 	function checkVoice() {
 		// Let's define a command.
 		var commands = {
@@ -126,8 +136,6 @@ function audioCheck() {
 
 		annyang.start();
 	}
-
-	checkVoice();
 
 	function start(){
 		var words = {
@@ -152,6 +160,8 @@ function audioCheck() {
 		console.log(correct);
 		end();
 	}
+
+	checkVoice();
 
 
 
