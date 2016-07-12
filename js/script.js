@@ -22,16 +22,16 @@ function initiate() {
 	hoverFour.addEventListener('mouseleave', releaseHover);
 
 	var hoverFive = document.getElementById('BTT');
-	// hoverFive.addEventListener('mouseover', handleHover2);
-	// hoverFive.addEventListener('mouseleave', releaseHover2);
+	hoverFive.addEventListener('mouseover', handleHover2);
+	hoverFive.addEventListener('mouseleave', releaseHover2);
 
-	// var hoverSix = document.getElementById('sponsor');
-	// hoverSix.addEventListener('mouseover', handleHover2);
-	// hoverSix.addEventListener('mouseleave', releaseHover2);
+	var hoverSix = document.getElementById('sponsor');
+	hoverSix.addEventListener('mouseover', handleHover2);
+	hoverSix.addEventListener('mouseleave', releaseHover2);
 
-	// var hoverSeven = document.getElementById('otherLink');
-	// hoverSeven.addEventListener('mouseover', handleHover2);
-	// hoverSeven.addEventListener('mouseleave', releaseHover2);
+	var hoverSeven = document.getElementById('otherLink');
+	hoverSeven.addEventListener('mouseover', handleHover2);
+	hoverSeven.addEventListener('mouseleave', releaseHover2);
 
 	function handleHover(evt){
 		var parent = evt.target.parentElement;
@@ -99,7 +99,7 @@ function recordVideo() {
 	});
 
 	player.on('finishRecord', function() {
-	    var audio = player.recordedData.audio;
+	    var audio = player.recordedData;
 	    console.log(audio);
 	});
 
@@ -139,25 +139,23 @@ function audioCheck() {
 
 	function start(){
 		var words = {
-			'A parameter forgives a wide correspondence. How can a blanket tube the stray crush? After the dishonest hate changes the upper iron. An early crystal frowns underneath each conceivable hero. The purchase loses over a grammatical conflict.': correct
+			'Bob ran across the field': correct
 		}
 		annyang.addCommands(words);
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
-		console.log(button[0]);
 		button[0].click();
 		console.log("Starting the recording")
 	}
 
 	function end() {
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
-		console.log(button[0]);
 		button[0].click();
 		console.log("STOP!")
 		annyang.abort();
 	}
 
 	function correct() {
-		console.log(correct);
+		console.log("correct, you pass");
 		end();
 	}
 
