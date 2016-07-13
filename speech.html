@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Speech Tools</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/videojs.record.css">
+	<!--<link rel="stylesheet" href="css/videojs.record.css"> -->
 	<script src="js/audioRecorder.js"></script>
 	<script src="js/audioRecorderWorker.js"></script>
 	<script src="js/callbackManager.js"></script>
@@ -56,14 +56,29 @@
 					</a>
 				</div>
 			</div>
+		</div>
+		<div class="row">
+			<div id="videoContainer" class="col-sm-6">
+				<video id="myVideo" class="video-js vjs-default-skin"></video>
+			</div>
+			<div id="textContainer" class="col-sm-5">
+				<u>Read the following text:</u>
+				<p id="text">
+					<br>
+					How much wood would a woodchuck chuck
+				</p>
+				<p id="howTo">
+					Click on start, or say "start the recording" to start. Once the recording starts read the sample text Make sure to be in a quiet place with little to no ambient noise. If the voice detection is able to understand you, you pass! A button will appear taking you to your results.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<button id="start" class="videoControl">Start</button>
+				<button id="stop" class="videoControl">Stop</button>
+				<button id="results" class="videoControl" disabled="disabled">You pass, see your results! --></button>
+			</div>
+		</div>
 	</div>
-	<video id="myVideo" class="video-js vjs-default-skin"></video>
-	<div class="col-sm-3">
-		<p>Text: How much wood would a woodchuck chuck</p>
-	</div>
-	<button id="start" class="videoControl">Start</button>
-	<button id="stop" class="videoControl">Stop</button>
-	<button id="results" class="videoControl hidden" disabled="disabled">You pass, see your results! --></button>
-</div>
 </body>
 </html>
