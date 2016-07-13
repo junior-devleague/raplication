@@ -236,6 +236,14 @@ body, html{
 
 
 /* Composition Tools */
+.theAnswer{
+	border: ridge;
+	border-color: #BC5202;
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: cursive;
+}
+
 .comp{
 	font-size: 18px;
 	font-family: Lucida;
