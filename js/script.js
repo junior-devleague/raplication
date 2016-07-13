@@ -59,23 +59,26 @@ function initiate() {
 //Speech
 
 //Composition
-	//randomizer
-	function randomizer(){
-		var Tips = [
-		"Multisyllabic words are useful in making writing more sophisticated.", "Consider using slant rhymes, which often are just as effective as real rhymes.", 
-		"Similes differ from metaphors in that they use the words 'like' and 'as'.", 
-		"Alliteration is a literary device that pertains to having the same first letter among many words in a sentence (i.e. Peter Piper picked a peck of pickled peppers).",
-		"It is important to know how many syllables are in each line when writing a poem/song. Rhythm is one of the most important aspects of a piece."
-		  ];
-		  
-		  var randomNumber = Math.round(Math.random() * 5);
-		  console.log(randomNumber)
 
-		  //document.getElementById('answer').inner
-	}
+// randomizer
+function randomizer(){
+	var Tips = [
+	"Multisyllabic words are useful in making writing more sophisticated.", "Consider using slant rhymes, which often are just as effective as real rhymes.", 
+	"Similes differ from metaphors in that they use the words 'like' and 'as'.", 
+	"Alliteration is a literary device that pertains to having the same first letter among many words in a sentence (i.e. Peter Piper picked a peck of pickled peppers).",
+	"It is important to know how many syllables are in each line when writing a poem/song. Rhythm is one of the most important aspects of a piece."
+	  ];
+	  
+	  var randomNumber = Math.round(Math.random() * 5);
+	  console.log(randomNumber)
 
+	  //document.getElementById('answer').inner
+}
+
+function compositionLoad() {
 	var hoverR = document.getElementById('buttonComp');
 	hoverR.addEventListener('click', randomizer);
+}
 
 function recordVideo() {
 	var player = videojs("myVideo",
