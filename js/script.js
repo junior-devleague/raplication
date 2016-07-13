@@ -129,6 +129,20 @@ function audioCheck() {
 	//startButton[0] is the button
 	startButton[0].click();
 
+	var array = ["Peter Piper picked a peck of pickled peppers", 
+				"Betty Botter bought some butter", 
+				"How much wood would a woodchuck chuck", 
+				"She sells seashells by the seashore",
+				"I saw a kitten eating chicken in the kitchen",
+				"I wish to wash my Irish wristwatch",
+				"We surely shall see the sun shine soon",
+				"Four fine fresh fish for you",
+				"I saw Susie sitting in a shoeshine shop",
+				"Lesser leather never weathered wetter weather better",
+				];
+	var length = array.length;
+
+
 	var sButton = document.getElementById('start');
 	var stopButton = document.getElementById('stop');
 	sButton.addEventListener('click', function() {
@@ -154,9 +168,9 @@ function audioCheck() {
 		annyang.start();
 	}
 
-	function start(){
+	function start(text) {
 		var words = {
-			'How much wood would a woodchuck chuck': correct
+			text: correct
 		}
 		annyang.addCommands(words);
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
