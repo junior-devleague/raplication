@@ -52,7 +52,7 @@ function initiate() {
 		var parent = evt.target.parentElement;
 		parent.className = 'foot';
 	}
-
+}
 
 //About
 
@@ -66,9 +66,16 @@ function initiate() {
 		"Similes differ from metaphors in that they use the words 'like' and 'as'.", 
 		"Alliteration is a literary device that pertains to having the same first letter among many words in a sentence (i.e. Peter Piper picked a peck of pickled peppers).",
 		"It is important to know how many syllables are in each line when writing a poem/song. Rhythm is one of the most important aspects of a piece."
-		  ]
+		  ];
+		  
+		  var randomNumber = Math.round(Math.random() * 5);
+		  console.log(randomNumber)
+
+		  //document.getElementById('answer').inner
 	}
 
+	var hoverR = document.getElementById('buttonComp');
+	hoverR.addEventListener('click', randomizer);
 
 function recordVideo() {
 	var player = videojs("myVideo",
