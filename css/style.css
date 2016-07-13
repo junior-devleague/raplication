@@ -197,6 +197,43 @@ body, html{
 
 /* Speech Tools */
 
+.videoControl {
+	border: 1px solid #000508;
+	background: #cfccae;
+	background: -webkit-gradient(linear, left top, left bottom, from(#dfe6ca), to(#cfccae));
+	background: -webkit-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -moz-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -ms-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -o-linear-gradient(top, #dfe6ca, #cfccae);
+	padding: 5px 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #3d3d3d;
+	font-size: 14px;
+	font-family: 'Sonsie one', cursive;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.videoControl:hover {
+	border-color: #5b6d78;
+	background: #5b6d78;
+	color: #ccc;
+}
+
+.videoControl:disabled {
+	cursor: not-allowed;
+}
+
+#myVideo {
+	margin-top: 2%;
+}
+
 
 /* Composition Tools */
 .comp{
