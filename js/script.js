@@ -145,7 +145,7 @@ function audioCheck() {
 
 	function start(){
 		var words = {
-			'Bob ran across the field': correct
+			'How much wood would a woodchuck chuck': correct
 		}
 		annyang.addCommands(words);
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
@@ -156,6 +156,8 @@ function audioCheck() {
 	function end() {
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
 		button[0].click();
+		var result = document.getElementById("results");
+		result.disabled = false;
 		console.log("STOP!")
 		annyang.abort();
 	}
@@ -166,60 +168,5 @@ function audioCheck() {
 	}
 
 	checkVoice();
-
-
-
-
-	// var recognizer = new Worker("js/recognizer.js");
-	// var id = 0;
-	// recognizer.postMessage({command: 'initialize', callbackId: id});
-	// var recognizer = new Module.Recognizer();
-	// var words = new Module.VectorWords();
-	// words.push_back(["HELLO", "HH AH L OW"]);
-	// words.push_back(["WORLD", "W ER L D"]);
-	// if (recognizer.addWords(words) != Module.ReturnType.SUCCESS) {
-	// 	alert("Error while adding words");
-	// }
-	// //words.delete();
-	// var pronunciation = recognizer.lookupWord("HELLO");
-	// var pronunciation1 = recognizer.lookupWord("WORLD");
-
-	// console.log(pronunciation);
-	// console.log(pronunciation1);
-	// words.delete();
-
-	// var ids = new Module.Integers();
-	// if (recognizer.addKeyword(ids, "HELLO WORLD") != Module.ReturnType.SUCCESS) {
-	//      alert("Error while adding key phrase"); // Meaning that the key phrase has issues
-	// }
-	// var id = ids.get(0); // This is the id assigned to the search
-	// ids.delete();
-
-	// var array = []; // array that contains an audio buffer
-	// var buffer = new Module.AudioBuffer();
-	// for (var i = 0 ; i < array.length ; i++) {
-	// 	buffer.push_back(array[i]); // Feed the array with audio data
-	// }
-	// var output = recognizer.start(); // Starts recognition on current language model
-	// output = recognizer.process(buffer); // Processes the buffer
-	// var hyp = recognizer.getHyp(); // Gets the current recognized string (hypothesis)
-	// for (var i = 0 ; i < array.length ; i++) {
-	// 	buffer.set(i, array[i]); // Feed buffer with new data
-	// }
-	// output = recognizer.process(buffer);
-	// hyp = recognizer.getHyp();
-	// output = recognizer.stop();
-	// // Gets the final recognized string:
-	// var final_hyp = recognizer.getHyp();
-	// console.log(final_hyp);
-	// buffer.delete();
-
-
-
-	// recognizer.delete();
-
-
-
-
 
 }
