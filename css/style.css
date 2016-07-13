@@ -229,11 +229,6 @@ body, html{
 	cursor: not-allowed;
 }
 
-.vjs-control-bar {
-	transform: rotateY(180deg);
-}
-
-
 #myVideo {
 	margin-top: 2%;
 	transform: rotateY(180deg);
@@ -261,6 +256,29 @@ body, html{
 
 /* Composition Tools */
 .theAnswer{
+	border: ridge;
+	border-color: #BC5202;
+	margin-top: 20px;
+	font-size: 16px;
+	font-family: cursive;
+}
+
+.comp{
+	font-size: 18px;
+	font-family: Lucida;
+	color: #323237;
+	margin-top: 15px;
+}
+
+.bold{
+	margin-top: 30px;
+	font-size: 18px;
+	font-family: Lucida;
+	color: #323237;
+	font-weight: bold;
+}
+
+.Booton{
 	border: 1px solid #000508;
 	background: #cfccae;
 	background: -webkit-gradient(linear, left top, left bottom, from(#dfe6ca), to(#cfccae));
@@ -277,34 +295,26 @@ body, html{
 	box-shadow: rgba(0,0,0,1) 0 1px 0;
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 	color: #3d3d3d;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: 'Sonsie one', cursive;
 	text-decoration: none;
 	vertical-align: middle;
+	margin-top: 18px;
+	text-align: center;
+	height: 60px;
+	padding-top: 18px;
 }
 
-.theAnswer:hover {
-	border-color: #5b6d78;
-	background: #5b6d78;
-	color: #ccc;
-}
-
-.comp {
-	font-size: 18px;
-	font-family: Lucida;
+.linkBooton{
 	color: #323237;
-	margin-top: 15px;
 }
 
-.bold {
-	margin-top: 30px;
-	font-size: 18px;
-	font-family: Lucida;
-	color: #323237;
-	font-weight: bold;
+.linkBooton:hover{
+	text-decoration: none;
+	color: white;
 }
 
-.italic {
+.italic{
 	font-size: 18px;
 	font-family: Lucida;
 	color: #323237;
