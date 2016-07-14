@@ -124,12 +124,9 @@ function recordVideo() {
 }
 
 function audioCheck() {
-
-	var startButton = document.getElementsByClassName('vjs-device-button vjs-control vjs-icon-device-perm');
-	//startButton[0] is the button
-	startButton[0].click();
-
-	var array = ["Peter Piper picked a peck of pickled peppers", 
+	//171,980.44444
+	var startButton = document.getElementsByClassName('vjs-device-button vjs-control vjs-icon-device-perm'),
+		array = ["Peter Piper picked a peck of pickled peppers", 
 				"Betty Botter bought some butter", 
 				"How much wood would a woodchuck chuck", 
 				"She sells seashells by the seashore",
@@ -139,12 +136,23 @@ function audioCheck() {
 				"Four fine fresh fish for you",
 				"I saw Susie sitting in a shoeshine shop",
 				"Lesser leather never weathered wetter weather better",
-				];
-	var length = array.length;
+				"If I put it in my batter, it will make my batter bitter",
+				"I have got a date at a quarter to eight. I’ll see you at the gate, so don’t be late",
+				"I thought I thought of thinking of thanking you"],
+		length = array.length,
+		sButton = document.getElementById('start'),
+		stopButton = document.getElementById('stop'),
+		text = random(),
+		resultButton = document.getElementById("results"),
+		time;
 
+	resultButton.addEventListener('click', function() {
+		//location.replace("results.html");
+		time = document.getElementsByClassName("vjs-current-time-display");
+		console.log(time[0].innerHTML);
+	});
 
-	var sButton = document.getElementById('start');
-	var stopButton = document.getElementById('stop');
+	startButton[0].click();
 	sButton.addEventListener('click', function() {
 		start();
 	});
@@ -168,11 +176,12 @@ function audioCheck() {
 		annyang.start();
 	}
 
-	function start(text) {
+	function start() {
 		var words = {
-			text: correct
 		}
+		words[text] = correct;
 		annyang.addCommands(words);
+		console.log(words)
 		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-start');
 		button[0].click();
 		console.log("Starting the recording")
@@ -185,11 +194,30 @@ function audioCheck() {
 		result.disabled = false;
 		console.log("STOP!")
 		annyang.abort();
+		result.disabled = false;
+		// same thing as $("#")
+		if (result.classList) {
+		  result.classList.remove("hidden");
+		}
+		else {
+		  result.hidden = result.hidden.replace(new RegExp('(^|\\b)' + hidden.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+		}
+
 	}
 
 	function correct() {
 		console.log("correct, you pass");
 		end();
+	}
+
+	function random() {
+		var result = document.getElementById("text");
+		var randIndex = Math.round(Math.random() * (length - 1));
+		var text = document.createElement("p");
+		text.innerHTML = array[randIndex];
+		result.appendChild(text);
+		console.log(array[randIndex]);
+		return array[randIndex];
 	}
 
 	checkVoice();
