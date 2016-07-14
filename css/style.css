@@ -254,6 +254,10 @@ body, html{
 	height: 50%;
 }
 
+.vjs-control-bar {
+	transform: rotateY(180deg);
+}
+
 /* Composition Tools */
 .theAnswer{
 	border: ridge;
