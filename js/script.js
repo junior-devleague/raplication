@@ -67,10 +67,15 @@ function randomizer(){
 	"Consider using slant rhymes, which often are just as effective as real rhymes.", 
 	"Similes differ from metaphors in that they use the words 'like' and 'as'.", 
 	"Alliteration is a literary device that pertains to having the same first letter among many words in a sentence (i.e. Peter Piper picked a peck of pickled peppers).",
-	"It is important to know how many syllables are in each line when writing a poem/song. Rhythm is one of the most important aspects of a piece.", "A coffee a day keeps the sloppyness at bay"
-	  ];
+	"It is important to know how many syllables are in each line when writing a poem/song. Rhythm is one of the most important aspects of a piece.", "Do not be afraid to use the dictionary. Reading the dictionary or searching up words online can be beneficial in writing.",
+	"Stray away from using words that are commonly learned in early elementary school. It should not be too hard to find a better replacement.", "Interior rhymes are useful, especially in rap music. These rhymes add to the overall flow to a poem or song.",
+	"Personification is giving something that is nonhuman some human characteristics. Consider using this effect in writing.", "Consider using two word rhymes. An example is ‘navy seals’ and ‘baby meals’.  These function as a multisyllabic rhyme.", 
+	"A ‘double entendre’ is a clever way to signify a line has a second, hidden meaning.", "The best writers have the best diction. One must choose words wisely when writing a piece, especially when there is a rhyme scheme that must be met.",
+	"Assonance is where multiple successive words share the same vowel sound. An example is ‘expect the best to reach success’.", "Incorporating a setting can help to put a reader in the author’s shoes.",
+	"Sensory details can be engaging to a reader. Try incorporating them as much as possible.",
+	];
 	  
-	  var randomNumber = Math.round(Math.random() * 5);
+	  var randomNumber = Math.round(Math.random() * 15);
 	  console.log(Tips[randomNumber]);
 
 	  document.getElementById('answer').innerHTML = Tips[randomNumber];
