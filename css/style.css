@@ -240,7 +240,8 @@ body, html{
 	background: -webkit-linear-gradient(top, #dfe6ca, #cfccae);
 	background: -moz-linear-gradient(top, #dfe6ca, #cfccae);
 	background: -ms-linear-gradient(top, #dfe6ca, #cfccae);
-	background: -o-linear-gradient(top, #dfe6ca, #cfccae);	font-family: 'Sonsie one', cursive;
+	background: -o-linear-gradient(top, #dfe6ca, #cfccae);
+	font-family: 'Sonsie one', cursive;
 	color: black;
 	border: 2px solid #392A1E;
 	-webkit-border-radius: 5px;
@@ -249,13 +250,17 @@ body, html{
 }
 
 #textContainer {
-	margin-top: -20%;
-	margin-left: 63%;
+	margin-top: 5%;
+	margin-left: 11%;
 	height: 50%;
 }
 
 .vjs-control-bar {
 	transform: rotateY(180deg);
+}
+
+#control {
+	margin-top: 1%;
 }
 
 /* Composition Tools */

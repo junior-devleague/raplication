@@ -152,7 +152,7 @@ function audioCheck() {
 		time;
 
 	resultButton.addEventListener('click', function() {
-		//location.replace("results.html");
+		location.replace("results.html");
 		time = document.getElementsByClassName("vjs-current-time-display");
 		console.log(time[0].innerHTML);
 	});
@@ -163,7 +163,9 @@ function audioCheck() {
 	});
 
 	stopButton.addEventListener('click', function() {
-		end();
+		annyang.pause();
+		var button = document.getElementsByClassName('vjs-record-button vjs-control vjs-icon-record-stop');
+		button[0].click();
 	});
 
 	function checkVoice() {
@@ -182,8 +184,8 @@ function audioCheck() {
 	}
 
 	function start() {
-		var words = {
-		}
+		annyang.resume();
+		var words = {};
 		words[text] = correct;
 		annyang.addCommands(words);
 		console.log(words)
