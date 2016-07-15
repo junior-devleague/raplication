@@ -207,7 +207,7 @@ function audioCheck() {
 		console.log("STOP!")
 		annyang.abort();
 		result.disabled = false;
-		// same thing as $("#")
+		// same thing as $("#results").removeAttr("hidden")
 		if (result.classList) {
 		  result.classList.remove("hidden");
 		}
