@@ -330,3 +330,99 @@ body, html{
 	font-style: italic;
 	margin-left: 15px;
 }
+
+/* Results */
+
+.WPM{
+	font-size: 40px;
+	color: #323237;
+	font-family: impact;
+	background-color: #FFF4D7;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 15px;
+}
+
+.wpm{
+	font-size: 30px;
+	color: #323237;
+	font-family: impact;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 15px;
+}
+
+.score{
+	font-size: 30px;
+	color: #323237;
+	font-family: impact;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 15px;
+}
+
+.Grade{
+	font-size: 40px;
+	color: #323237;
+	font-family: impact;
+	background-color: #FFF4D7;
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 15px;
+}
+
+.speechypic{
+	border: ridge;
+	border-width: 5px;
+	border-color: #BC5202;
+	margin-top: 20px;
+}
+
+.Claim{
+	border: 1px solid #000508;
+	background: #cfccae;
+	background: -webkit-gradient(linear, left top, left bottom, from(#dfe6ca), to(#cfccae));
+	background: -webkit-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -moz-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -ms-linear-gradient(top, #dfe6ca, #cfccae);
+	background: -o-linear-gradient(top, #dfe6ca, #cfccae);
+	padding: 5px 10px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #323237;
+	font-size: 16px;
+	font-family: 'Sonsie one', cursive;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-top: 18px;
+	text-align: center;
+	height: 60px;
+	padding-top: 18px;
+}
+
+.BootonII{
+	color: #323237;
+}
+
+.BootonII:hover{
+	text-decoration: none;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
