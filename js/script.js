@@ -157,7 +157,7 @@ function audioCheck() {
 		time;
 
 	resultButton.addEventListener('click', function() {
-		location.replace("results.html");
+		location.replace("result.html");
 		time = document.getElementsByClassName("vjs-current-time-display");
 		console.log(time[0].innerHTML);
 	});
